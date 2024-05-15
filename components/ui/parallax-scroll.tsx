@@ -2,14 +2,18 @@
 import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 
 export const ParallaxScroll = ({
-  images,
+  firstPart,
+  secondPart,
+  thirdPart,
   className,
 }: {
-  images: string[];
+  firstPart: StaticImageData[];
+  secondPart: StaticImageData[];
+  thirdPart: StaticImageData[];
   className?: string;
 }) => {
   const gridRef = useRef<any>(null);
@@ -22,15 +26,18 @@ export const ParallaxScroll = ({
   const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 200]);
   const translateThird = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
-  const third = Math.ceil(images.length / 3);
+  // const third = Math.ceil(images.length / 3);
 
-  const firstPart = images.slice(0, third);
-  const secondPart = images.slice(third, 2 * third);
-  const thirdPart = images.slice(2 * third);
+  // const firstPart = images.slice(0, third);
+  // const secondPart = images.slice(third, 2 * third);
+  // const thirdPart = images.slice(2 * third);
 
   return (
     <div
-      className={cn("h-[40rem] items-start overflow-y-auto w-full", className)}
+      className={cn(
+        "max-h-screen items-start overflow-y-auto w-full",
+        className
+      )}
       ref={gridRef}
     >
       <div
@@ -45,7 +52,7 @@ export const ParallaxScroll = ({
             >
               <Image
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-center rounded-lg gap-10 !m-0 !p-0"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -58,7 +65,7 @@ export const ParallaxScroll = ({
             <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
               <Image
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-center rounded-lg gap-10 !m-0 !p-0"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -71,7 +78,7 @@ export const ParallaxScroll = ({
             <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
               <Image
                 src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-center rounded-lg gap-10 !m-0 !p-0"
                 height="400"
                 width="400"
                 alt="thumbnail"

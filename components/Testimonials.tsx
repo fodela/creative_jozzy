@@ -5,11 +5,11 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function Testimonials() {
   return (
-    <section className="">
+    <section className="my-16">
       <h2 className="text-4xl font-bold capitalize text-center py-8">
         What our happy customers are saying
       </h2>
-      <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <div className="h-full py-16 rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
