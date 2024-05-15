@@ -1,5 +1,26 @@
 "use client";
 import { ParallaxScroll } from "./ui/parallax-scroll";
+import honeyone from "@/public/assets/images/work/honeyflyer.jpeg";
+import honeytwo from "@/public/assets/images/work/honeypackaging.jpeg";
+import honeythree from "@/public/assets/images/work/honeyflyerlight.jpeg";
+import doughone from "@/public/assets/images/work/doughpackagingwhite.jpeg";
+import doughtwo from "@/public/assets/images/work/doughlogo.jpeg";
+import doughthree from "@/public/assets/images/work/doughflyer.jpeg";
+import printone from "@/public/assets/images/work/shirtyellow.jpeg";
+import printtwo from "@/public/assets/images/work/shirtlist.jpeg";
+import printthree from "@/public/assets/images/work/shirtblack.jpeg";
+
+import citationone from "@/public/assets/images/work/citation.jpeg";
+import brandtwo from "@/public/assets/images/work/creativejozzybrand.jpeg";
+import citationthree from "@/public/assets/images/work/delaliprint.jpeg";
+import citationtwo from "@/public/assets/images/work/creativejozzycard.jpeg";
+import brandthree from "@/public/assets/images/work/footwearbrand.jpeg";
+import brandone from "@/public/assets/images/work/delalibrand.jpeg";
+import doughflyerred from "@/public/assets/images/work/doughflyerred.jpeg";
+import delalitwo from "@/public/assets/images/work/delalilogo.jpeg";
+import delalithree from "@/public/assets/images/work/delalithree.jpeg";
+import delalione from "@/public/assets/images/work/delalilogoconcept.jpeg";
+import pin from "@/public/assets/images/work/pin.jpeg";
 
 export default function Gallery() {
   return (
@@ -7,19 +28,41 @@ export default function Gallery() {
       <h2 className="text-4xl font-bold capitalize text-center py-8">
         Our Works
       </h2>
-      <ParallaxScroll images={images} />
+      <ParallaxScroll
+        firstPart={firstPart}
+        secondPart={secondPart}
+        thirdPart={thirdPart}
+      />
     </section>
   );
 }
 
-const images = [
-  "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-  "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-  "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-  "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
-  "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3070&q=80",
-  "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-  "https://images.unsplash.com/photo-1682686581854-5e71f58e7e3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-  "https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-  "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+export const firstPart = [
+  honeyone,
+  doughone,
+  brandone,
+  delalione,
+  printone,
+
+  citationone,
+  doughflyerred,
+];
+
+const secondPart = [
+  honeytwo,
+  doughtwo,
+  brandtwo,
+  delalitwo,
+  printtwo,
+  citationtwo,
+];
+
+const thirdPart = [
+  honeythree,
+  doughthree,
+  brandthree,
+  delalithree,
+  printthree,
+  citationthree,
+  pin,
 ];
