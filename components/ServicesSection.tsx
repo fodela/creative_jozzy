@@ -2,7 +2,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export default function ServicesSection() {
   return (
-    <section className="max-w-5xl mx-auto p-8">
+    <section className="max-w-5xl mx-auto px-8 py-16">
       <h2 className="text-4xl font-bold capitalize text-center py-8">
         Our Services
       </h2>
