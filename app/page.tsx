@@ -1,5 +1,4 @@
 import FAQ from "@/components/FAQ";
-import Hero from "@/components/Hero";
 import ServicesSection from "@/components/ServicesSection";
 import Testimonials from "@/components/Testimonials";
 import { HeroParallax } from "@/components/ui/hero-parallax";

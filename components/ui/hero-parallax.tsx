@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { Button } from "./button";
 
 export const HeroParallax = ({
   products,
@@ -57,7 +58,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-full py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] "
+      className="h-full py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -114,13 +115,25 @@ export const Header = () => {
         />
       </div>
       <h1 className="text-2xl md:text-7xl font-bold text-center">
-        The Ultimate development studio
+        Your First Impression is Everything
       </h1>
       <p className="max-w-xl text-base md:text-xl mt-8 dark:text-neutral-200 text-balance text-center mx-auto">
         We build beautiful products with the latest technologies and frameworks.
         We are a team of passionate developers and designers that love to build
         amazing products.
       </p>
+
+      {/* <div className="flex mx-auto gap-4">
+        <Button className="text-white uppercase text-lg font-bold">
+          work with us
+        </Button>
+        <Button
+          variant="secondary"
+          className="text-white uppercase text-lg font-bold"
+        >
+          work with us
+        </Button>
+      </div> */}
     </div>
   );
 };
