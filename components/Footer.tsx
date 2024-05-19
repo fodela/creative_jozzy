@@ -20,8 +20,7 @@ const Footer = () => {
           <div>
             <p>
               <span className="text-xs uppercase tracking-wide text-gray-500">
-                {" "}
-                Call us{" "}
+                Call us
               </span>
 
               <a
@@ -175,36 +174,33 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="font-medium text-gray-900">Company</p>
+              <p className="font-medium text-gray-900">Quick Links</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="#services"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    {" "}
-                    About{" "}
+                    Our Services
                   </a>
                 </li>
 
                 <li>
                   <a
-                    href="#"
+                    href="#work"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    {" "}
-                    Meet the Team{" "}
+                    Our work
                   </a>
                 </li>
 
                 <li>
                   <a
-                    href="#"
+                    href="#faq"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    {" "}
-                    Accounts Review{" "}
+                    FAQ
                   </a>
                 </li>
               </ul>
@@ -220,8 +216,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-500 transition hover:opacity-75"
                 >
-                  {" "}
-                  Terms & Conditions{" "}
+                  Terms & Conditions
                 </a>
               </li>
 
@@ -230,8 +225,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-500 transition hover:opacity-75"
                 >
-                  {" "}
-                  Privacy Policy{" "}
+                  Privacy Policy
                 </a>
               </li>
 
@@ -240,8 +234,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-500 transition hover:opacity-75"
                 >
-                  {" "}
-                  Cookies{" "}
+                  Cookies
                 </a>
               </li>
             </ul>
