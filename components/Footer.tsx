@@ -1,13 +1,17 @@
 import React from "react";
+import { services } from "./ServicesSection";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="bg-white lg:grid lg:grid-cols-5">
       <div className="relative block h-32 lg:col-span-2 lg:h-full">
-        <img
-          src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
-          alt=""
+        <Image
+          src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image of adobe tools"
           className="absolute inset-0 h-full w-full object-cover"
+          width={1080}
+          height={1080}
         />
       </div>
 
@@ -24,7 +28,7 @@ const Footer = () => {
                 href="#"
                 className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
               >
-                0123456789
+                (+233)501626027
               </a>
             </p>
 
@@ -157,55 +161,16 @@ const Footer = () => {
               <p className="font-medium text-gray-900">Services</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    1on1 Coaching{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Company Review{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Accounts Review{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    HR Consulting{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    {" "}
-                    SEO Optimisation{" "}
-                  </a>
-                </li>
+                {services.map((service) => (
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      {service.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
