@@ -70,7 +70,7 @@ export const HeroParallax = ({
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-10 sm:space-x-20 mb-20">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -79,7 +79,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row  mb-20 space-x-10 sm:space-x-20 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -88,7 +88,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-10 sm:space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -104,14 +104,14 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-32 px-4 w-full  left-0 top-0 ">
+    <div className="max-w-7xl relative mx-auto py-20 md:py-32 px-4 w-full  left-0 top-0 z-40 backdrop-blur-sm">
       <div className="">
         <Image
           src="/assets/logo-horizontal-bgless.png"
           width={1080}
           height={200}
           alt="logo"
-          className="backdrop-blur"
+          className=""
         />
       </div>
       <h1 className="text-2xl md:text-7xl font-bold text-center">
@@ -122,18 +122,6 @@ export const Header = () => {
         We are a team of passionate developers and designers that love to build
         amazing products.
       </p>
-
-      {/* <div className="flex mx-auto gap-4">
-        <Button className="text-white uppercase text-lg font-bold">
-          work with us
-        </Button>
-        <Button
-          variant="secondary"
-          className="text-white uppercase text-lg font-bold"
-        >
-          work with us
-        </Button>
-      </div> */}
     </div>
   );
 };
@@ -158,7 +146,7 @@ export const ProductCard = ({
         y: -15,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-48 w-[15rem] sm:h-96 sm:w-[30rem] relative flex-shrink-0"
     >
       <Link
         href={product.link}
