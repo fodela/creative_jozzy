@@ -107,11 +107,11 @@ export const Header = () => {
     <div className="max-w-7xl relative mx-auto py-20 md:py-32 px-4 w-full  left-0 top-0 z-40 backdrop-blur-sm">
       <div className="">
         <Image
-          src="/assets/logo-horizontal-bgless.png"
+          src="/assets/logo-hero.png"
           width={1080}
           height={200}
           alt="logo"
-          className=""
+          className="invert dark:invert-0"
         />
       </div>
       <h1 className="text-2xl md:text-7xl font-bold text-center">
