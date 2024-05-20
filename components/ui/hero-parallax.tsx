@@ -104,7 +104,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-32 px-4 w-full  left-0 top-0 z-40 backdrop-blur-sm">
+    <div className="max-w-7xl relative mx-auto py-20 md:py-32 px-4 w-full  left-0 top-0 z-40 ">
       <div className="">
         <Image
           src="/assets/logo-hero.png"
