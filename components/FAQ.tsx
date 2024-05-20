@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 const FAQ = () => {
   return (
-    <section className="container  md:px-16 my-16">
+    <section className="container  md:px-16 mb-32">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-2">Any Question? Look Here</h2>
         <p>Frequently asked questions</p>
