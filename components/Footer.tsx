@@ -161,7 +161,7 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 {services.map((service) => (
-                  <li>
+                  <li key={service.title}>
                     <a
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
