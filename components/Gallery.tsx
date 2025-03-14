@@ -24,7 +24,7 @@ import pin from "@/public/assets/images/work/pin.jpeg";
 
 export default function Gallery() {
   return (
-    <section className="">
+    <section className="min-h-screen snap-start">
       <h2 className="text-4xl font-bold capitalize text-center py-8">
         Our Works
       </h2>
@@ -43,7 +43,6 @@ export const firstPart = [
   brandone,
   delalione,
   printone,
-
   citationone,
   doughflyerred,
 ];
